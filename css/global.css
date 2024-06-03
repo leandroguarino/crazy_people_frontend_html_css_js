@@ -1,11 +1,13 @@
+html{
+    font-size: 18px;
+}
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .title{
-    flex: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: normal;
     margin-top: 12%;
@@ -30,14 +32,18 @@ body{
     align-items: center;
     height: 20vh;
 }
-.button{
+a.button{
+    display: flex;
     flex: 1;
-    padding: 12px 20px 12px 20px;
     border-radius: 24px;
     font-size: 16px;
     cursor: pointer;
     width: 95%;
     max-height: 48px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
 }
 .button-primary{
     background-color: #19191B;
@@ -50,9 +56,60 @@ body{
     border: 1px solid #EFEFF0;
     margin-top: 6px;
 }
+.button-cancel{
+    background-color: #c00;
+    color: #fff;
+    border: 1px solid #c00;
+    margin-top: 6px;
+}
 .image-full-width{
     flex: 1;
     width: 90%;
     align-self: center;
     margin-bottom: 40px;
+}
+.image-centered{
+    flex: 1;
+    align-self: center;
+    margin: auto;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.form-group label{
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.form-group input{
+    width: 100%;
+    border: 1px solid #61646B;
+    padding: 12px;
+    border-radius: 8px;
+}
+.form-group .input-password{
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+.form-group .input-password .icon-eye{
+    position: absolute;    
+    right: 0px;
+    top: 13px;
+    color: #AFB1B6;
+    cursor: pointer;
+}
+.form-group input::placeholder {
+    color: #AFB1B6;
+    opacity: 1; /* Firefox */
+}
+
+.form-group input::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #AFB1B6;
+}
+.form-centered{
+    margin: auto;
+    width: 100%;
 }
