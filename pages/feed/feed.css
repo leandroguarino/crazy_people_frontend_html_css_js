@@ -1,0 +1,55 @@
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 480px;
+    margin: auto;
+}
+header{
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+#page-title{
+    flex: 1;
+    font-weight: bold;
+}
+#profile-icon{
+    position: relative;
+    display: inline;
+}
+#profile-icon #profile-ball{    
+    background-color: #22AD5C;
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 9px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#notification-icon{
+    position: relative;
+    display: inline;
+    font-size: 1.4rem;
+}
+#notification-ball{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+#menu-icon{
+    display: inline;
+}
