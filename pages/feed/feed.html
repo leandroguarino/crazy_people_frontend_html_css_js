@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline - Crazy People - a rede social das suas loucuras</title>
+    <link href="../../css/global.css" rel="stylesheet" />
     <link href="feed.css" rel="stylesheet" />
     <link href="../../css/fontawesome/css/all.min.css" rel="stylesheet" />
 </head>
@@ -27,5 +28,17 @@
             <i class="fa-solid fa-chevron-down"></i>
         </div>
     </header>
+    <section id="container-form-post">
+        <form id="form-post" name="form-post" method="post" action="">
+            <textarea rows="5" cols="40" name="text-post" id="text-post" placeholder="escreva a boa..."></textarea>
+            <div id="container-form-post-options">
+                <div id="container-form-post-options-icons">
+                    <a href="#" class="form-post-icon"><i class="fa-solid fa-image"></i></a>
+                    <a href="#" class="form-post-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <button id="button-post" name="button-post" class="button-post">Publicar <i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

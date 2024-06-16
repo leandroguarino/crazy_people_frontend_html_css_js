@@ -53,3 +53,38 @@ header{
 #menu-icon{
     display: inline;
 }
+#container-form-post{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+    border-radius: 4px;
+}
+#container-form-post-options{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+#container-form-post-options-icons{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+#form-post{
+    display: flex;
+    flex-direction: column;
+}
+a.form-post-icon{
+    color: #61646B;
+    margin-right: 10px;
+}
+textarea{
+    flex: 1;
+    border-radius: 8px;
+    padding: 10px;
+    color: #61646B;
+    font-size: 0.9rem;
+}

@@ -128,3 +128,10 @@ a.general:hover{
     color: #00c;
     font-weight: 600;
 }
+.button-post{
+    background-color: #0284C7;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    border-width: 0px;
+}
