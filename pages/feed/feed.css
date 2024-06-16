@@ -21,11 +21,11 @@ header{
     flex: 1;
     font-weight: bold;
 }
-#profile-icon{
+.profile-icon{
     position: relative;
     display: inline;
 }
-#profile-icon #profile-ball{    
+.profile-icon .profile-ball{    
     background-color: #22AD5C;
     border: 2px solid #fff;
     width: 10px;
@@ -87,4 +87,93 @@ textarea{
     padding: 10px;
     color: #61646B;
     font-size: 0.9rem;
+}
+.container-post{
+    background-color: #FAFAFA;
+    padding: 16px 8px 16px 8px;
+    border-radius: 4px;
+    margin: 10px 5px 10px 5px;
+}
+.container-post-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container-post-user-photo{
+    display: flex;
+}
+.container-post-user-name{
+    font-weight: bold;
+    margin-left: 15px;
+    flex: 1;
+}
+.container-post-text{
+    font-size: 0.8rem;
+    color: #61646B;
+    margin: 16px 0px 16px 0px;
+    line-height: 1.2rem;
+}
+.container-post-media{
+    flex: 1;
+    display: flex;
+}
+.container-post-media img{
+    width: 100%;
+}
+.container-post-options{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.container-post-options-icons{
+    flex: 1;
+    display: flex;
+    flex-direction: row;   
+    align-items: flex-start;
+    gap: 16px; 
+}
+.container-post-options-icons-reaction{
+    display: flex;
+    flex-direction: column;
+}
+.container-post-options-icons-reaction span{
+    font-size: 0.8rem;
+    color: #61646B;
+}
+.link-comment{
+    color: #61646B;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.link-comment i{
+    font-size: 1.5rem;
+}
+.link-comment span{
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+a.link-react{
+    text-decoration: none;
+}
+a.link-reaction{
+    position: relative;
+}
+.container-reactions{
+    display: flex;
+    flex-direction: row;
+    background-color: #1F2937;
+    border-radius: 37px;
+    padding: 8px;
+    gap: 16px;
+}
+a.link-reaction:link .container-reactions, a.link-reaction:visited .container-reactions{
+    display: none;
+}
+a.link-reaction:hover .container-reactions{
+    display: flex;
+    position: absolute;
+    top: -40px;
+    left: 0px;
 }
