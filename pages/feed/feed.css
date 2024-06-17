@@ -40,6 +40,62 @@ header{
     display: inline;
     font-size: 1.4rem;
 }
+#notification-icon a{
+    color: #fff;
+}
+#container-notifications{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    width: 50vw;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    filter: drop-shadow(2px 2px 4px #27252565);
+    z-index: 1;
+    color: #000;
+}
+#arrow-container-notifications{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+}
+#notification-icon a:hover #container-notifications, #notification-icon a:hover #arrow-container-notifications{
+    display: flex;
+}
+.card-notification-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button-cancel{
+    background-color: #fff;
+    color: #0284C7;
+    border: 1px solid #0284C7;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    height: 28px;
+    margin-top: 0px;
+}
+.card-notification{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-notification-title{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card-notification-body{
+    font-size: 0.8rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 #notification-ball{
     background-color: #fff;
     border: 2px solid #000;
