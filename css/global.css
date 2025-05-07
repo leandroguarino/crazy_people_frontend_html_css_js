@@ -140,3 +140,8 @@ a.general:hover{
     border-width: 0px;
     height: 28px;
 }
+.error{
+    color: #c00;
+    font-size: 0.8rem;
+    display: none;
+}
