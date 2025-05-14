@@ -7,8 +7,26 @@
     <link href="../../css/global.css" rel="stylesheet" />
     <link href="feed.css" rel="stylesheet" />
     <link href="../../css/fontawesome/css/all.min.css" rel="stylesheet" />
+    <script>
+        function getLocation(){
+            if (navigator.geolocation){ //se existe esse objeto no navegador
+                navigator.geolocation.getCurrentPosition(getSuccess, getError)
+            }else{
+                //alert("Seu navegador não suporte geolocalização")
+                console.log("Navegador não permite geolocalização")
+            }
+        }
+        function getSuccess(position){
+            window.localStorage.setItem("latitude", position.coords.latitude)
+            window.localStorage.setItem("longitude", position.coords.longitude)
+        }
+        function getError(error){
+            // alert(error)
+            console.log(error)
+        }
+    </script>
 </head>
-<body>
+<body onload="getLocation()">
     <header>
         <div id="menu-icon">
             <i class="fa-solid fa-bars"></i>
