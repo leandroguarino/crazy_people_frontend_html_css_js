@@ -25,6 +25,11 @@ function register(){
     let passwordConfirm = document.getElementById("password-confirm").value.trim()
     if (validate(name, email, password, passwordConfirm)){
         //salvar os dados do usuário
-        alert("Cadastrado com sucesso")
+        //alert("Cadastrado com sucesso")
+        Swal.fire({
+            title: "Sucesso!",
+            text: "Você foi cadastrado(a) com sucesso!",
+            icon: "success"
+        });
     }
 }
